@@ -11,7 +11,12 @@ public class MeganTest extends LinearOpMode {
         telemetry.addData("name", "Megan");
         telemetry.update();
         waitForStart();
+        int counter = 0;
         while(opModeIsActive()){
+            counter++;
+            telemetry.addData("counter", counter);
+            telemetry.update();
         }
+
     }
 }
